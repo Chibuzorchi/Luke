@@ -1,0 +1,38 @@
+.transaction-timeline {
+	.node-wrapper {
+		width: 10%;
+		position: relative;
+		.node {
+			height: 30px;
+			width: 30px;
+			position: absolute;
+			margin: 0;
+			top: 0;
+			bottom: 0;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+
+			&.--green-node {
+				background-color: #dcffe6;
+				svg path {
+					fill: #087a2a !important;
+				}
+			}
+
+			&.--red-node {
+				background-color: #ffeff0;
+				svg path {
+					fill: #d0000c;
+				}
+			}
+
+			svg {
+				height: 16px;
+				width: 16px;
+				margin: auto;
+				border-radius: 50%;
+			}
+		}
+	}
+}
